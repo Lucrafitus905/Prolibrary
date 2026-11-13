@@ -99,7 +99,21 @@ ul li:nth-child(even) {
 
 @media (min-width: 640px) {
     body {
-        font-size: 50%;
+        font-size: 70%;
+    }
+    main {
+        flex-direction: row;
+    }
+    main aside  {
+        padding: 12px 12px 0px 3px;
+    }
+    main section {
+        padding: 12px 3px 0px 12px;
+    }
+}
+@media (min-width: 450px) and (orientation: landscape) and (pointer: coarse){
+    body {
+        font-size: 80%;
     }
     main {
         flex-direction: row;
@@ -113,7 +127,7 @@ ul li:nth-child(even) {
 }
 @media (min-width: 768px) {
     body {
-        font-size: 70%;
+        font-size: 80%;
     }
 }
 @media (min-width: 1024px) {
@@ -126,17 +140,3 @@ ul li:nth-child(even) {
         font-size: 100%;
     }
 } 
-@media (orientation: landscape) {
-    body {
-        font-size: 70%;
-    }
-    main {
-        flex-direction: row;
-    }
-    main aside  {
-        padding: 12px 12px 0px 3px;
-    }
-    main section {
-        padding: 12px 3px 0px 12px;
-    }
-}
