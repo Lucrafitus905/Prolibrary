@@ -25,6 +25,7 @@ body {
     background-color: var(--main-background);
     min-height: 100vh;
     min-width: 192px;
+    font-size: 18px;
 }
 
 header {
@@ -61,6 +62,7 @@ nav span::after {
 
 main {
     display: flex;
+    flex-direction: column;
 }
 main div {
     flex: 3;
@@ -71,10 +73,10 @@ main a {
 }
 main aside {
     flex: 1;
-    padding: 12px 12px 0px 3px;
+    padding: 12px 12px 0px 12px;
 }
 main section {
-    padding: 12px 3px 0px 12px;
+    padding: 12px 12px 0px 12px;
 }
 section h2, aside h2 {
     padding: 6px;
@@ -95,19 +97,46 @@ ul li:nth-child(even) {
     color: var(--list-marker-2);
 }
 
-@media (max-width: 900px) {
+@media (min-width: 640px) {
+    body {
+        font-size: 50%;
+    }
+    main {
+        flex-direction: row;
+    }
+    main aside  {
+        padding: 12px 12px 0px 3px;
+    }
+    main section {
+        padding: 12px 3px 0px 12px;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 70%;
+    }
+}
+@media (min-width: 1024px) {
     body {
         font-size: 90%;
     }
-}
-@media (max-width: 720px) {
+} 
+@media (min-width: 1280px) {
     body {
-        font-size: 80%;
+        font-size: 100%;
+    }
+} 
+@media (orientation: landscape) {
+    body {
+        font-size: 70%;
     }
     main {
-        flex-direction: column;
+        flex-direction: row;
     }
-    main aside, main section {
-        padding: 12px 12px 0px 12px;
+    main aside  {
+        padding: 12px 12px 0px 3px;
+    }
+    main section {
+        padding: 12px 3px 0px 12px;
     }
 }
