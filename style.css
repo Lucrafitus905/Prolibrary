@@ -1,22 +1,28 @@
+/* CSS Reset */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Definição das cores */
+
 :root {
     --black: #2a2a2a;
     --dark-purple: #6f3f8f;
-    --weak-dark-purple: #3a1f458f;
-    --light-gray: #6f84ba;
-    --dark-gray: #4f347a;
+    --border-purple: #3a1f458f;
+    --weak-border-purple: #3a1f454f;
+    --light-bluish-gray: #5f549a;
+    --highlight-purple: #423456;
+    --weak-purple: #4f345a;
     --text-white: #efefff;
     --visited-link: #dfdfe8;
     --section-background: #28252f;
-    --list-background-1: #464f4f;
+    --list-background-1: #463c4f;
     --list-background-2: #46434f;
-    --list-marker-1: #2c2e2f;
-    --list-marker-2: #2e1b2f;
+    --list-marker-1: #2e1b2f;
+    --list-marker-2: #2c2e2f;
     --main-background: #0a060f;
 }
 
@@ -29,77 +35,102 @@ body {
 }
 
 header {
-    background-image: linear-gradient(135deg, var(--black), var(--dark-purple));
+    background-image: linear-gradient(120deg, var(--black), var(--dark-purple));
     color: var(--text-white);
     padding: 12px;
-    border-bottom: 6px solid var(--weak-dark-purple);
+    border-bottom: 6px solid var(--border-purple);
 }
 
+/* Barra de navegação */
+
 nav {
-    background-image: linear-gradient(120deg, var(--dark-gray), var(--light-gray));
+    background-image: linear-gradient(120deg, var(--weak-purple), var(--light-bluish-gray));
     padding: 12px;
-    border-bottom: 4px solid var(--weak-dark-purple);
+    border-bottom: 4px solid var(--border-purple);
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 5px;
+    -webkit-overflow-scrolling: touch;
 }
+
+/* Links */
+
 a {
     display: inline-block;
     text-decoration: none;
     color: var(--text-white);
-    transition: transform 0.05s ease-in-out;    
+    transition: transform 0.05s ease-in-out;
 }
 a:visited {
     color: var(--visited-link);
 }
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 a:active {
     transform: scale(0.9);
 }
-nav span::after {
+nav span:not(:last-child)::after {
     color: var(--text-white);
-    content: " \25CA";
+    content: " \25C6";
 }
+
+/* Conteúdo principal */
 
 main {
     display: flex;
     flex-direction: column;
 }
 main div {
-    flex: 3;
+    flex: 7;
 }
 main a {
     color: var(--text-white);
     text-decoration: none;
 }
 main aside {
-    flex: 1;
+    flex: 4;
     padding: 12px 12px 0px 12px;
 }
 main section {
     padding: 12px 12px 0px 12px;
 }
 section h2, aside h2 {
-    padding: 6px;
+    padding: 6px 6px 6px 10px;
     margin-bottom: 6px;
     background-color: var(--section-background);
     color: var(--text-white);
+    border-left: 5px solid var(--highlight-purple);
 }
+/* Listas */
 ul {
     list-style: inside symbols(cyclic "\25BA");
-    background-color: var(--list-background-1);
     color: var(--list-marker-1);
 }
 ul li {
     padding: 8px 6px;
+    background-color: var(--list-background-1);
+    border-left: 5px solid var(--border-purple);
+    border-bottom: 4px solid var(--weak-border-purple);
+    margin-bottom: 2px;
 }
 ul li:nth-child(even) {
     background-color: var(--list-background-2);
     color: var(--list-marker-2);
 }
 
+/* Tentativa de responsividade com dolo eventual */
+@media (max-width: 640px) {
+body {
+        font-size: 80%;
+    }
+}
 @media (min-width: 640px) {
     body {
-        font-size: 70%;
+        font-size: 100%;
     }
     main {
         flex-direction: row;
@@ -113,7 +144,7 @@ ul li:nth-child(even) {
 }
 @media (min-width: 450px) and (orientation: landscape) and (pointer: coarse){
     body {
-        font-size: 80%;
+        font-size: 70%;
     }
     main {
         flex-direction: row;
@@ -125,6 +156,7 @@ ul li:nth-child(even) {
         padding: 12px 3px 0px 12px;
     }
 }
+/*
 @media (min-width: 768px) {
     body {
         font-size: 80%;
@@ -139,4 +171,4 @@ ul li:nth-child(even) {
     body {
         font-size: 100%;
     }
-} 
+}  */
