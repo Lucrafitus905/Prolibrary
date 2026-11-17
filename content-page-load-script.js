@@ -1,6 +1,6 @@
 //Carregamento dinâmico de página
 
-const paramUrl = new URLSearchParams(window.location.search);
+const paramUrl = new URLSearchParams(window.location.search.replaceAll('-', '_'));
 const getContent = paramUrl.get("content");
 console.log(paramUrl + '\n' + getContent);
 
@@ -11,10 +11,6 @@ const contentSpace = document.getElementById("content");
 const pageContent = data[getContent];
 
 if (pageContent) {
-
-    //Corigir desaparecimento de tudo quando o conteúdo não for encontrado
-    //Automatizar a página principal também
-
     document.title = 'Prolibrary - ' + pageContent.title;
 
     let headerContent = ``;
@@ -32,16 +28,15 @@ if (pageContent) {
     `;
     pageHeader.innerHTML = headerContent;
 
-    const itemsNav = Object.values(pageContent.nav);
     const itemsContent = Object.values(pageContent.content);
 
     let htmlContent = ``;
 
     htmlContent += `<nav>`;
 
-    itemsNav.forEach((content, index) => {
+    itemsContent.forEach((content, index) => {
         htmlContent += `
-            <span><a href="#${itemsNav[index].toLowerCase().replaceAll(' ', '')}">${itemsNav[index]}</a></span>
+            <span><a href="#${content.title.toLowerCase().replaceAll(' ', '-')}">${content.title}</a></span>
             `
     });
     htmlContent += `
@@ -52,7 +47,7 @@ if (pageContent) {
     itemsContent.forEach((content, index) => {
         htmlContent += `
             <section>
-                <h2 id="${itemsContent[index].title.toLowerCase().replaceAll(' ', '')}">${itemsContent[index].title}</h2>
+                <h2 id="${itemsContent[index].title.toLowerCase().replaceAll(' ', '-')}">${itemsContent[index].title}</h2>
                 <article>
                     ${itemsContent[index].content}
                 </article>  
@@ -65,16 +60,21 @@ if (pageContent) {
     `;
     contentSpace.innerHTML = htmlContent;
 } else {
-    contentSpace.innerHTML = `<h2>Erro 404! Página não encontrada.</h2>`
+    pageHeader.innerHTML = `
+    <h1>Página não encontrada!</h1>
+    <a href="index.html">Voltar</a>
+    `;
+    contentSpace.innerHTML = `
+    <main>
+        <div>
+            <section>
+                <h2>Erro 404! Página não encontrada.</h2>
+                <img src="images/placeholder.png" alt="placeholder" style="display: block; margin: 1.5rem auto; width: 30vw"></img>
+                <article>
+                    Parece que você encontrou um final.
+                </article>
+            </section>
+        </div>
+    </main>
+    `;
 };
-
-// Scroll do nav
-
-const nav = document.querySelector('nav');
-
-nav.addEventListener('wheel', (e) => {
-    if (nav.scrollWidth > nav.clientWidth) {
-        e.preventDefault();
-        nav.scrollLeft += e.deltaY;
-    }
-}, {passive: false});
