@@ -15,7 +15,6 @@ contentList.forEach((content, index) => {
     <section id="${content.pageID.toLowerCase()}">
                 <h2><a href="content.html?content=${content.pageID}">${content.title}</a></h2>
                 <ul>
-                
     `;
     contentDetails.forEach((insideContent, index) => {
         mainTagContent += `

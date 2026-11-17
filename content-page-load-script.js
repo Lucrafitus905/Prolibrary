@@ -2,7 +2,6 @@
 
 const paramUrl = new URLSearchParams(window.location.search.replaceAll('-', '_'));
 const getContent = paramUrl.get("content");
-console.log(paramUrl + '\n' + getContent);
 
 const pageHeader = document.getElementById("header")
 
