@@ -28,6 +28,9 @@ header a:hover {
 main div {
     margin-right: 12px;
 }
+main section {
+    padding-right: 3px;
+}
 main article {
     color: var(--text-white);
     background-color: var(--list-background-2);
