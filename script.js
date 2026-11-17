@@ -12,6 +12,9 @@ const pageContent = data[getContent];
 
 if (pageContent) {
 
+    //Corigir desaparecimento de tudo quando o conteúdo não for encontrado
+    //Automatizar a página principal também
+
     document.title = 'Prolibrary - ' + pageContent.title;
 
     let headerContent = ``;
