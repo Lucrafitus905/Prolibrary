@@ -83,6 +83,7 @@ nav span:not(:last-child)::after {
 main {
     display: flex;
     flex-direction: column;
+    margin-bottom: 12px;
 }
 main div {
     flex: 7;
