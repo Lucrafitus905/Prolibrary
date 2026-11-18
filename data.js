@@ -107,7 +107,7 @@ const data = {
     gdevelop_5: {
         pageID: `gdevelop-5`,
         title: `GDevelop 5`,
-        img: null,
+        img: `images/gdevelop-5-icon.png`,
         content: {
             entry0: {
                 title: `Placeholder 0`,
@@ -317,7 +317,7 @@ const data = {
     git_e_github: {
         pageID: `git-e-github`,
         title: `Git e Github`,
-        img: null,
+        img: `images/github-icon.png`,
         content: {
             entry0: {
                 title: `Placeholder 0`,
@@ -352,7 +352,7 @@ const data = {
     batch: {
         pageID: `batch`,
         title: `Batch`,
-        img: null,
+        img: `images/batch-icon.png`,
         content: {
             entry0: {
                 title: `Placeholder 0`,
@@ -387,7 +387,7 @@ const data = {
     linux: {
         pageID: `linux`,
         title: `Linux`,
-        img: null,
+        img: `images/linux-icon.png`,
         content: {
             entry0: {
                 title: `Placeholder 0`,
