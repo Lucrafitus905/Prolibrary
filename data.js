@@ -76,7 +76,7 @@ const data = {
         content: {
             entry0: {
                 title: `Nodes`,
-                content: `Placeholder 0`
+                content: `Placeholder0<div class="image-grid-3"><img src="images/placeholder.png" alt=""></img><img src="images/placeholder.png" alt=""></img><img src="images/placeholder.png" alt=""></img></div>`
             },
             entry1: {
                 title: `Placeholder 1`,

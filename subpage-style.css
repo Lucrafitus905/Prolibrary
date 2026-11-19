@@ -38,3 +38,23 @@ main article {
     border-left: 5px solid var(--border-purple);
     border-bottom: 4px solid var(--weak-border-purple);
 }
+main article * {
+    display: block;
+    padding: 9px 0px;
+}
+.image-grid-3 {
+    width: 100%;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "i1 i2 i3";
+}
+.image-grid-3 * {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.image-grid-3:nth-child(1) {grid-area: "i1";}
+.image-grid-3:nth-child(2) {grid-area: "i2";}
+.image-grid-3:nth-child(3) {grid-area: "i3";}
