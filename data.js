@@ -76,11 +76,24 @@ const data = {
         content: {
             entry0: {
                 title: `Nodes`,
-                content: `Placeholder0<div class="image-grid-3"><img src="images/placeholder.png" alt=""></img><img src="images/placeholder.png" alt=""></img><img src="images/placeholder.png" alt=""></img></div>`
+                content: `
+                Nodes (Nós) são os elementos básicos que constroem todos os objetos que constituem um jogo no Godot Engine.
+                Eles são capazes de desempenhar funções específicas (como exibir uma imagem, tocar um som, servir de colisão).
+                Eles podem ser combinados em árvores compostas deles para desempenhar funções mais complexas (ex: criar um personagem).
+                <br><br>
+                Todos os nodes tem propriedades básicas como nome e podem possuir filhos e pais.
+                
+                `
             },
             entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
+                title: `Cenas`,
+                content: 
+                `Cenas são coleções organizadas de nodes (árvores de nodes) salvas juntas em um arquivo para representar qualquer
+                elemento que possa ser reutilizado em um jogo, podendo ser um personagem/inimigo base/completo, um mapa ou uma interface.
+                <br><br>
+                Toda cena possuí um node principal (nó raiz) que agrupa todos os nós filhos, e, depois de criada, pode ser reutilizada quantas vezes for necessário.
+                <br><br>
+                Isso é útil, pois, ao alterar essa cena, todas as instâncias dela receberão a mesma alteração. Além disso, você pode incorporar uma cena a outras cenas para obter comportamentos mais complexos (ex: cena inimigo base -> cena inimigo específico).`
             },
             entry2: {
                 title: `Placeholder 2`,
