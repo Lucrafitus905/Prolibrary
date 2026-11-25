@@ -5,32 +5,8 @@ const data = {
         img: `images/visual-studio-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -40,32 +16,8 @@ const data = {
         img: `images/visual-studio-code-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -77,43 +29,17 @@ const data = {
             entry0: {
                 title: `Nodes`,
                 content: `
-                Nodes (Nós) são os elementos básicos que constroem todos os objetos que constituem um jogo no Godot Engine.
-                Eles são capazes de desempenhar funções específicas (como exibir uma imagem, tocar um som, servir de colisão).
-                Eles podem ser combinados em árvores compostas deles para desempenhar funções mais complexas (ex: criar um personagem).
-                <br><br>
-                Todos os nodes tem propriedades básicas como nome e podem possuir filhos e pais.
-                
+                - Elementos básicos que constroem todos os objetos;<br>
+                - Desempenham um função específica;<br>
+                - Podem ser organizados em árvores para desempenhar funções mais complexas.
                 `
             },
             entry1: {
                 title: `Cenas`,
                 content: 
-                `Cenas são coleções organizadas de nodes (árvores de nodes) salvas juntas em um arquivo para representar qualquer
-                elemento que possa ser reutilizado em um jogo, podendo ser um personagem/inimigo base/completo, um mapa ou uma interface.
-                <br><br>
-                Toda cena possuí um node principal (nó raiz) que agrupa todos os nós filhos, e, depois de criada, pode ser reutilizada quantas vezes for necessário.
-                <br><br>
-                Isso é útil, pois, ao alterar essa cena, todas as instâncias dela receberão a mesma alteração. Além disso, você pode incorporar uma cena a outras cenas para obter comportamentos mais complexos (ex: cena inimigo base -> cena inimigo específico).`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                `- Árvores de nodes ou nodes únicos salvos em forma de arquivo;<br>
+                - Podem ser reutilizadas quantas vezes necessário em outras cenas, utilizando o botão de link acima da árvore de nodes da cena;<br>
+                - São capazes de representar objetos complexos dentro do jogo, e podem fazer parte de outros objetos (ex: jogador, inimigos, mapas, coletáveis, etc).`
             }
         }
     },
@@ -123,32 +49,8 @@ const data = {
         img: `images/gdevelop-5-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -158,32 +60,8 @@ const data = {
         img: `images/html-5-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -193,32 +71,8 @@ const data = {
         img: `images/css-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -228,32 +82,8 @@ const data = {
         img: `images/javascript-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -263,32 +93,8 @@ const data = {
         img: `images/python-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -298,32 +104,8 @@ const data = {
         img: `images/c-sharp-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -333,32 +115,8 @@ const data = {
         img: `images/github-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -368,32 +126,8 @@ const data = {
         img: `images/batch-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     },
@@ -403,32 +137,8 @@ const data = {
         img: `images/linux-icon.png`,
         content: {
             entry0: {
-                title: `Placeholder 0`,
-                content: `Placeholder 0`
-            },
-            entry1: {
-                title: `Placeholder 1`,
-                content: `Placeholder 1`
-            },
-            entry2: {
-                title: `Placeholder 2`,
-                content: `Placeholder 2`
-            },
-            entry3: {
-                title: `Placeholder 3`,
-                content: `Placeholder 3`
-            },
-            entry4: {
-                title: `Placeholder 4`,
-                content: `Placeholder 4`
-            },
-            entry5: {
-                title: `Placeholder 5`,
-                content: `Placeholder 5`
-            },
-            entry6: {
-                title: `Placeholder 6`,
-                content: `Placeholder 6`
+                title: `Placeholder`,
+                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             }
         }
     }
